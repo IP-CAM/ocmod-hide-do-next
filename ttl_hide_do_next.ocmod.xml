@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>Hide "What would you like to do next?" at checkout</name>
+    <code>ttl_hide_do_next</code>
+    <version>1.0</version>
+    <author>Move Digital</author>
+    <link>http://www.movedigital.com.au</link>
+    <file path="catalog/view/theme/*/template/checkout/cart.tpl">
+        <operation>
+            <search>
+                <![CDATA[<?php if ($coupon || $voucher || $reward || $shipping) { ?>]]>
+            </search>
+            <add position="replace">
+                <![CDATA[<?php if (($coupon || $voucher || $reward || $shipping) && false) { ?>]]>
+            </add>
+        </operation>
+    </file>
+</modification>

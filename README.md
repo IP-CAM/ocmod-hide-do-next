@@ -2,4 +2,4 @@
 Hide the "Do Next" options on checkout (estimate shipping, vouchers etc)
 
 Tested on:
--  v2.3.0.1
+-  v2.0.3.1
